@@ -3,61 +3,58 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Tampered ID Card Check</title>
+  <title>ID Card Tampering Detection</title>
 
   <!-- CSS  -->
   <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
 <body>
-  <nav style="background-color: #0074D9" class="lighten-1"  role="navigation" style="height: 100px">
+  <nav style="background-color: #0074D9" class="lighten-1" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" class="brand-logo center"><h5>ID Card Tampering</h5></a>
-      <div style="margin-left: 800px">
-      	   Made by <a class="orange-text text-lighten-3">Zeki Tekin</a>
-      </div>
+      <a id="logo-container" class="brand-logo center" style="font-size: 24px; font-weight: bold; color: white;">ID Card Tampering Detection</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      	<li style="padding-right: 20px; font-size: 18px;"><a href="#" style="color: white; font-weight: bold;">Made by Zeki Tekin</a></li>
+      </ul>
     </div>
   </nav>
 
 
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <div class="row">
+      <div class="row" style="margin-top: 50px;">
         <form action='/' method="post" class="col s12" enctype="multipart/form-data">
           <div class="row">
-          	<div class="input-field col s3">
+          	<div class="input-field col s4">
             </div>
 
-            <div class="input-field col s5" style="margin-left: 20px; margin-top: 100px">
+            <div class="input-field col s4" style="margin-top: 30px;">
               <div class = "row">
-                  <label for="first_name"><b>Upload ID Card Image</b></label><br>
+                  <label for="file_upload" style="font-size: 24px;">Upload ID Card Image</label><br>
                   <div class = "file-field input-field">
                     <div class = "btn" style="background-color: #0074D9">
                       <span>Browse</span>
                       <input type = "file" name="file_upload" id="file_upload" />
                     </div>
                     <div class = "file-path-wrapper">
-                      <input class = "file-path validate" type = "text" placeholder = "Upload file" name="file_name" id="file_name" />
+                      <input class = "file-path validate" type = "text" placeholder = "Select image file" name="file_name" id="file_name" />
                     </div>
                   </div>
               </div>
             </div>
           </div>
-    
-          <div class="row center">
-            <button type="submit" class="btn-large" style="background-color: #0074D9">Check</button>
+
+          <div class="row center" style="margin-top: 50px;">
+            <button type="submit" class="btn-large" style="background-color: #0074D9; font-size: 24px;">Check Image</button>
           </div>
         </form>
        	<div style="text-align: center; padding-top: 50px">
-      		<h5>{{pred}}</h5>
+      		<h5 style="color: #0074D9; font-size: 24px;">{{pred}}</h5>
      	</div>
 
       </div>
       <br><br>
     </div>
-  </div>
-
-  </div>
   </div>
 
   <!--  Scripts-->
@@ -70,4 +67,3 @@
 
   </body>
 </html>
-
