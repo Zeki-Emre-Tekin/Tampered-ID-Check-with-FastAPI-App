@@ -7,6 +7,9 @@ import os
 import cv2
 import imutils
 from skimage.metrics import structural_similarity
+import subprocess
+
+subprocess.check_call(['python3', '-m', 'pip', 'install', 'tensorflow'])
 
 app = FastAPI()
 
